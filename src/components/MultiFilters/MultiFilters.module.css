@@ -1,0 +1,77 @@
+.filters {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.priceFilter {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.filters li {
+    text-align: left;
+    margin: 4px 0;
+    background-color: none;
+    font-size: 1.2rem;
+    border-radius: 2px;
+}
+
+.filters li:hover:not(.activeFilter) {
+    background-color: #f3f5ff;
+}
+
+.filters li:active {
+    transform: scale(0.95);
+    transition: ease-in-out;
+}
+.activeFilter {
+    background-color: #e5e8f8;
+}
+
+.activeFilter:hover {
+    background-color: #d7daf3;
+}
+
+.priceFilters input::-webkit-outer-spin-button,
+.priceFilters input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.priceFilters > hr {
+    transform: rotate(90deg) translateX(10px);
+    height: 45px;
+}
+
+.priceFiltersWithLabel {
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.priceFilters {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15%;
+}
+
+.priceFilters > div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.priceFilters input {
+    justify-content: space-between;
+    transform: scale(1.1);
+    padding: 3px;
+    font-size: 14px;
+    -moz-appearance: textfield;
+}

@@ -1,0 +1,38 @@
+.catalog {
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: repeat(3, calc(33% - 5% / 1.6));
+    gap: 5%;
+}
+
+.catalogItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.catalogItem > img {
+    width: 100%;
+}
+
+.catalogItemData {
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.catalogItemData > h1 {
+    padding-bottom: 10px;
+    width: max-content;
+    font-size: 1.7rem !important;
+}
+
+.warningMessage {
+    grid-column: 1/4;
+    margin: 10% auto;
+}
+
+@media screen and (max-width: 900px) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

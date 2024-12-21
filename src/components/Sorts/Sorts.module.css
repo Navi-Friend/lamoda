@@ -1,0 +1,21 @@
+.sorts {
+    display: flex;
+    width: 100%;
+    gap: 2%;
+}
+
+.sort {
+    font-size: 1.1rem;
+}
+
+.sort:hover:not(.activeSort) {
+    background-color: #e5e8f8;
+}
+
+.activeSort {
+    background-color: #dce1f9;
+}
+
+.activeSort:hover {
+    background-color: #d7daf3;
+}
